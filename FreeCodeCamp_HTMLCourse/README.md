@@ -56,4 +56,33 @@ Upload the index.html file for validation. You get some errors.
 "Error: Start tag seen without seeing a doctype first. Expected ```<!DOCTYPE html>```" - Documentum type declaration should stand in the very first line of every html file. 
 
 
+## Chapter2: Head Element
+
+Everything inside in the ```<head>``` element is not seen on the webpage, it contains meta data
+
+```
+<meta name="author" content="Anett Keszler">
+<meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
+```
+
+The ```<meta>``` element attributes (name, content) can be picked up in search engines or some other service that wants to learn more about our web page.
+
+```<link>``` element: 
+```        
+<link rel="icon" href="html.png" type="image/x-icon">
+```
+It will add the small icon beside the title in the tab when opening in browser.
+
+Add css file and reference to it in the html file:
+
+```
+<link rel="stylesheet" href="main.css" type="text/css">
+```
+
+
+
+
+
+
+
 
