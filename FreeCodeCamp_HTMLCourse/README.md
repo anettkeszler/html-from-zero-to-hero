@@ -79,6 +79,44 @@ Add css file and reference to it in the html file:
 <link rel="stylesheet" href="main.css" type="text/css">
 ```
 
+## Chapter3: Text Basics
+
+### Headings
+
+```<h1>``` to ```<h6>```
+
+It gives a semantic meaning to the text, there is a hyerarchy between them.
+
+```<p></p>``` paragraph 
+```<address></address>``` to provide address nicely
+
+```<hr>``` horizontal rule 
+
+```<br>``` line break - html doesn't care about whitespaces, it will ignore them. So use line break to add extra empty lines. 
+
+```<em></em>``` inline element, it emphasizes/italisizes the text.
+```<strong></strong>``` inline element, it makes bigger and bolder the text.
+
+```<abbr></abbr>``` - abbreviation, add an attribute to abbr to get a meaning --> title. 
+```<abbr title="Mozilla Developer Network">MDN</abbr>```
+
+- comment in html file - it is not visible on the web page but visible in the source code.
+```<!-- TODO: Add more places-->```
+
+Inline elements: em, strong, abbr
+Block level elements: h1 - h6, p
+
+#### HTML entities
+
+```&nbsp;``` it creates a ' ' (space). 
+
+```&lt;``` and ```&gt;``` and ```&copy;``` - less than, greather than and @ sign. 
+
+```
+        &lt;&lt;&lt; &copy; Anett Keszler &gt;&gt;&gt;
+        <<< © Anett Keszler >>>
+```
+
 
 
 
