@@ -118,6 +118,36 @@ Add css file and reference to it in the html file:
         <<< © Anett Keszler >>>
 ```
 
+## Chapter4: List Types
+
+- **Ordered list(ol)**: it is a numbered list, indented
+```
+<ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ol>
+```
+
+- **Unordered list (ul)**: it creates a list with bullet point, indented
+```
+<ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ul>
+```
+- **Describtion list(dl)**: it has two different types of element: description term - **dt** and description details - **dd**.
+```
+<dl>
+    <dt>North Pole</dt>
+    <dd>I heard this is <strong>cold</strong>!</dd>
+    <dt>South Pole</dt>
+    <dd>This is also cold.</dd>
+</dl>
+```
+Here the description terms are to the left, and the description details are indented 
+
 
 
 
