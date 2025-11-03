@@ -202,5 +202,43 @@ Dial <a href="tel:+1234567890">my phone number</a>.
 <a href="https://www.google.com/" target="_blank">Google</a> in a new tab.
 ```
 
+## Chapter6: Add Image 
 
+```
+<img src="img/html_logo.jpg" alt="HTML5 Logo" title="I am learning HTML5." width="300">
+```
 
+- ```<img>``` tag is to add image to the file
+- ```<img src="img/html_logo.jpg">``` - **src** attribute contains the source of the image 
+- ```<img src="" alt="HTML5 Logo">``` - **alt** attribute is alternative text, it helps to the assistive technologies for those who may not be able to see the image (a screen reader will read the description). This text is also appears on the page, if the image does not load for some reason. 
+
+- ```<img src="" alt="" title="">``` - **title** attribute, it is not access able, a screen reader will not read it, so it cannot be something very important. This is text, that can complement our image, but not necesseraly required. It is visible when you hover with your mouse to the image. 
+
+- ```width``` attribute: it will tell the width of the image. If we only provide the width, html will automatically match/adjust the heigh of the image. CSS will override these values. 
+
+- ```height``` attribute: tells the height of the image we apply on. CSS will override these values. 
+
+- It is recommended to provide **width** and **height** attributes in the 'img' tag because of the **cumulative layout**, we tell the browser that something needs space here. If we don't provide them, the browser shifts everything.
+
+- ```loading``` attribute: it is set to **"eager"** value by default, but now let's set it to **"lazy"**. Any image that is below the fold (that is what you don't currently see when the page loads), you set the loading attribute to lazy, and that means that the browser will only load that iomage when it knows it is about to show , when we scroll down. Because images are not loaded, it loads the web page faster. It is a good **performance technique**, especially when you are dealing with lots of images. 
+
+- ```figure``` element - we wrap the image tag into this figure element. It doesn't do much by itself, but it intends the image. Add a `figcaption` element to the image, which is basically better than just add a paragraph. Figcaption is a caption under the image. 
+
+```
+<figure>
+    <img src="img/vacation.jpg" alt="Caribbean beach" title="I want to visit a Caribbean beach as soon as possible." width="400" height="225" loading="lazy">
+    <figcaption>Caribbean Beach Holiday</figcaption>
+</figure>
+```
+
+```
+<figure>
+    <img src="img/html.jpg" alt="HTML5 Logo" title="I am learning HTML5." width="400" height="225">
+    <figcaption>An Example of HTML5 Code: </figcaption>
+    <p>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+    </p>
+</figure>
+```
+
+- Another way to use figure element: it can contain code snippet, and it can have a caption on the top.
