@@ -148,10 +148,59 @@ Add css file and reference to it in the html file:
 ```
 Here the description terms are to the left, and the description details are indented 
 
+## Chapter5: Add Links
+- 'ht' in html is hypertext, and it is what links together everything on web
+- 'anchor tag': creates a link to another page on the web 
+```
+<a href=""></a>
 
+    <li>...I use resources from <abbr title="Mozilla Developer Network">
+        <a href="https://developer.mozilla.org/en-US/">MDN</a>
+    </abbr></li>
+```
 
+- href="https://developer.mozilla.org/en-US/" - this is an **absolute reference** to the website
+- href ="html.png" - this is a **relative reference**, when the source is on our server, in this case in the same folder.
+```
+<a href="about.html">Anett Keszler</a>  // relative reference 
+```
+- **internal reference**: it is a link directly on the page
 
+- **section** element: a semantic html element, represents a generic standalone section of a document.(**id attribute**)
+```
+    <section id="html"></section>
+    <section id="vacation"></section>
+```
 
+- **nav** element: another semantic html element, represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+
+```
+<nav>
+    <ul>
+        <li><a href="#html">Learning HTML</a></li>
+        <li><a href="#vacation">Planning a Vacation</a></li>
+    </ul>
+</nav>
+```
+
+- **Download a link**: with the **'download' attribute** in 'a' element clicking on the text it downloads the linked element.
+```
+Download an <a href="../Chapter2_HeadElement/html.png" download>HTML5 favicon</a>
+```
+
+- **Email address as a link**: 'mailto'
+```
+Contact me at <a href="mailto:random@gmail.com">my email address</a>
+```
+- **Dialing a telephone number**: 
+```
+Dial <a href="tel:+1234567890">my phone number</a>.
+```
+
+- 'target="_blank"' attribute in 'a' tag: it opens a new tab when you click on the link.
+```
+<a href="https://www.google.com/" target="_blank">Google</a> in a new tab.
+```
 
 
 
