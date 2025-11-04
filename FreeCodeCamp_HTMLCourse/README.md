@@ -242,3 +242,39 @@ Dial <a href="tel:+1234567890">my phone number</a>.
 ```
 
 - Another way to use figure element: it can contain code snippet, and it can have a caption on the top.
+
+## Chapter7: Semantic Tags
+
+- ```h1-h6``` - hierarchy of headers - there is only one ```h1``` tag per page
+- you can have multiple `h2` headers which is one level down in the hierarchy, and they are define sub-topics
+
+- **Semantic html tags** help us quickly see or read the different sections in the web page and navigate to those sections. They makes our pages accessible to screen readers and other assistive technology
+
+- ```<nav>``` element is semantic, it contains a grouping of links in our index.html. 
+
+- ```<section>``` element: represents a generic standalone section of a document.
+
+- ```<header>``` element: represents introductory content, usually a heading, navigation, author name, form, etc. It can be more ```header``` in a page. (we include the h1 and nav elements)
+
+- ```<main>``` element: there is only one main per page for the whole content of the page.  (we include our 2 'sections'). 
+
+
+- ```<footer>``` element: at the botton of the page. 
+
+Now we created 3 sections of our page: **header, main and footer**.  
+
+- we can have more ```<nav>``` elements on one page (one at the top, one at the botton). It is important to label them so the assistive technology knows which nav is which.
+
+    - ```<nav aria-label="primary-navigation">``` - 'aria-label' attribute can help 
+
+- ```<article>``` (change 'section' tags to 'artice') - it clearly has its own topics, it represents a self-contained composition in a page, which is independently reuseable. Example: a forum post, newspaper article... 
+
+- ```<aside>``` element - represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes, a complementary text that is not as important as what is in the main section
+
+- ```details>``` element - it creates a disclosure widget in which information is visible only when the widget is toggled into an open state. A summary or label must be provided using the ```<summary>``` element.
+
+- ```<mark>``` element - inline element, it highlights the text in the enclosing context. 
+
+- ```<div>``` element - it has no semantic meaning, it is much like a section, you would see a lot in older html code. You should avoid using div in your code. 
+
+#### Download Html5 Outliner from Chrome Web Store 
