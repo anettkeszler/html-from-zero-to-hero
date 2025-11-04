@@ -30,10 +30,11 @@ Create **index.html** file - this is always the file name that is expected to la
 
 ### Useful Extensions
 
-1. To intend nicely your html code, use **Prettier - Code formatter** extension to autoformat your code 
+1. VSC: To intend nicely your html code, use **Prettier - Code formatter** extension to autoformat your code 
 
+2. VSC: Download **Live Server** from Extension - it is going to help us to view our web page. 
 
-2. Download **Live Server** from Extension - it is going to help us to view our web page. 
+3. Chrome: HTML5 Outliner Chrome Extension 
 
 ### Go Live
 
@@ -278,3 +279,44 @@ Now we created 3 sections of our page: **header, main and footer**.
 - ```<div>``` element - it has no semantic meaning, it is much like a section, you would see a lot in older html code. You should avoid using div in your code. 
 
 #### Download Html5 Outliner from Chrome Web Store 
+
+## Chapter8: Create Tables 
+
+- Tables are made up of rows and columns 
+- tr: table row
+- th: table header: automatically formatted, centered and bold
+- td: table data 
+
+```
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            ...
+        </tr>
+    </thead>
+    <tbody>
+        <tr> 
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+        </tr>
+        ...
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+
+    </tfoot>
+</table>
+```
+
+- ```<caption>``` semantic tag in table, we cansay what the table is about, it helps to the screen readers 
+- ```<thead>``` is the table head
+- ```<tbody>``` is the table body
+- ```<tfoot>``` is the table foot 
