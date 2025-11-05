@@ -320,3 +320,95 @@ Now we created 3 sections of our page: **header, main and footer**.
 - ```<thead>``` is the table head
 - ```<tbody>``` is the table body
 - ```<tfoot>``` is the table foot 
+
+## Chapter9: Forms and Inputs
+
+- Forms: allow you to send information back to the page owners as users, this makes our web site interactive 
+
+- Add a new list item to the navigation bar
+```
+<nav aria-label="primary-navigation">
+    <ul>...
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+```
+
+```
+<article id="contact">
+    <h2>Contact Me</h2>
+    <p>I'd really like to hear from you!</p>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Jean" autocomplete="on" required autofocus>
+    </form>
+</article>
+```
+
+- ```<form>``` element: 
+    - ```action="https://httpbin.org/get"```
+    - ```method="get"```
+- ```<label>``` element:
+- ``` <input>``` element:  
+    - ```type="text"``` 
+    - ```name="firstName"```
+    - ```placeholder="Jean"``` : it lets us display text in the Input field. It shows the user what to expect in that field. 
+    - ```autocomplete="on"```: it will remember other inputs that have been entered into this field earlier and suggest those. So when you submit the form and then fill it out again later, it might suggest what we previously put in
+    - ```required="true"``` / ```required```: you don't have to put 'true' necesseraly, if you have `required` here it is automatically 'true', if not there, it is 'false'. 
+    - ```autofocus```: if we type it it is automatically set to true. Only one element in the form or on the page can actually have autofocus, because it can't focus on more than one at once. This will put the focus in that input field when the page loads.
+
+    - ```type="password"``` attribute - it will show dots in the input field
+    ```
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="your secret" required>
+    ```
+- Submit the form: we get a link to httpbin.org/get, which contains the submitted answers as arguments 
+```
+{
+  "args": {
+    "coffee": "latte", 
+    "decade": "1980", 
+    "firstName": "Anett", 
+    "lastName": "Keszler", 
+    "message": "", 
+    "password": "123", 
+    "phone": "123-456-7890", 
+    "season": ""
+  }, 
+```
+- url in get method: 
+```
+  "url": "https://httpbin.org/get?firstName=Anett&lastName=Keszler&password=123&phone=123-456-7890&decade=1970&coffee=cappuchino&season=spring&food=pizza&pets=dog&message=Hello!"
+```
+**Password is visible** in the url, which is not good. Never include personal information in **get method**, because it will shown in the url.
+
+
+Instead use **'post' method to send password or any personal info**. 
+```
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+```
+
+```
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "coffee": "cappuchino", 
+    "decade": "1970", 
+    "firstName": "Anett", 
+    "food": "pizza", 
+    "lastName": "Keszler", 
+    "message": "Hello!", 
+    "password": "123",  --> it's in the form, not in the args itfelf! And url doesn't contain the information you sent
+    "pets": "dog", 
+    "phone": "123-456-7890", 
+    "season": "spring"
+  }, 
+  ```
+
+- url in 'post' method:
+
+```
+"url": "https://httpbin.org/post"
+```
